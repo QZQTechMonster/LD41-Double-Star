@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿
+//can be attached to any rogidbody2D object that you want to set max speed
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,4 +22,5 @@ public class MaxSpeed : MonoBehaviour {
         }
 		
 	}
+
 }
