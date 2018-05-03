@@ -106,4 +106,5 @@ public class Emit : MonoBehaviour {
             childs[i].GetComponent<Rigidbody2D>().AddForce(dir_rotate.Rotate( ( i -1 ) * angle ) * childMass * childSpeed);  // rotate and emit
         }
     }
+
 }
