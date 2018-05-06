@@ -17,5 +17,5 @@ public class shelft : MonoBehaviour {
 	public void OnStartGame(string sceneName)  
 	    {  
 		        Application.LoadLevel("Test");  
-		    }  
+	     }  
 }

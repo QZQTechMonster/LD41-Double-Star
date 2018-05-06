@@ -57,11 +57,12 @@ public class Emit : MonoBehaviour {
     }
 
     IEnumerator lifeCircle_destroy(bool enable, List<GameObject> childs)   // destroy the child object if the life circle was enabled
-    {
+    { 
         yield return new WaitForSeconds(durationTime);
-        if (enable)
+        if (enable && this.transform.childCount > 0 )
         {
-            for (int i = 0; i < childs.Count; i++)
+            int j = this.transform.childCount;
+            for (int i = 0; i < j; i++)
             {
                 if (childs[i].name != this.name)
                     Destroy(childs[i].gameObject);
